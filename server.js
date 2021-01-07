@@ -25,7 +25,7 @@ app.post('/upload', function(req, res) {
     if (err)
       return res.status(500).send(err);
 
-    res.send(`File uploaded! <a href="http://darwinsoft-com-br.umbler.net/video/${sampleFile.name.slice(0, -4)}" target="_blank">Player</a>`);
+    res.send(`File uploaded! <a href="http://darwinsoft.com.br/video/${sampleFile.name.slice(0, -4)}" target="_blank">Player</a>`);
   });
 });
 
