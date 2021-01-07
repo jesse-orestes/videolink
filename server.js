@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 const crypto = require('crypto');
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'publica')))
 app.use(fileUpload());
 
 app.get('/', function(req, res) {
