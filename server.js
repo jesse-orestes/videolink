@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'publica')))
 app.use(fileUpload());
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname + '/index.htm'))
+  res.send('<a href="http://darwinsoft.com.br/upload">Clique aqui para fazer upload do seu video</a>')
 })
 app.get('/upload', function(req, res) {
   res.sendFile(path.join(__dirname + '/upload.htm'))
