@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'publica')))
 app.use(fileUpload());
 
 app.get('/', function(req, res) {
-  res.sendFile(res.send('<a href="http://darwinsoft-com-br.umbler.net/upload">Upload</a>'))
+  res.sendFile(path.join(__dirname + '/index.htm'))
 })
 app.get('/upload', function(req, res) {
   res.sendFile(path.join(__dirname + '/upload.htm'))
